@@ -16,33 +16,6 @@ The instructions have been tested on macOS 10.12 (Sierra) with a Yubikey 4.
 
 To perform these instructions, the Yubikey should be plugged into your computer's USB port.
 
-## Use for Two Factor Authentication / U2F Setup
-
-### GitHub
-
-1. Go to your [GitHub Security Settings](https://github.com/settings/security)
-2. Turn on `Two-factor Authentication` if it's not already enabled. You will
-   need to set up either an SMS or TOTP (Google Authenticator) if it's not.
-3. Under `Security keys, choose `Register new device`
-4. Type in a name: `yourname-yubikey-nano4` or something else that will help
-   you remember the key
-5. Click `Add`
-6. Follow the instructions on screen - you'll probably need to tap the yubikey
-   for it to register.
-
-Yubico has more [detailed instructions](https://www.yubico.com/support/knowledge-base/categories/articles/use-yubikey-github/).
-
-### Google
-
-Similar instructions. 
-
-1. Go to your [Google Sign-in & Security page](https://myaccount.google.com/security)
-2. Click `Two-step verification` and you may be prompted for your password.
-3. Click `Add Security Key` and follow the on-screen instructions. You may
-   need to tap or touch your yubikey.
-
-Yubico has a [video](https://www.yubico.com/why-yubico/for-individuals/gmail-for-individuals/)
-
 ## Setup GPG Key
 
 Before you being, you'll need to install [GPGTools GPG Suite](https://gpgtools.org/). As you do this, here are a few notes about it:
