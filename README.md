@@ -27,7 +27,7 @@ Before you being, you'll need to install [GPGTools GPG Suite](https://gpgtools.o
 Now, generate the keys. Start a Terminal session, then issue the following commands and options:
 
 ```bash
-> gpg2 --card-edit
+> gpg --card-edit
 
 [truncated...]
 
@@ -174,10 +174,10 @@ _Not sure if you have to logout/login or not here, to ensure GPG Tools can picku
 
 Now, we'll convert your GPG public key to a SSH public key and add it to a server.
 
-1. `> gpg2 --card-edit`
+1. `> gpg --card-edit`
 1. From the text that gets displayed (either automatically, or via the `gpg/card> list` command, grab the last 8 digits of the Authentication key hex code (let's say they are `EEEE FFFF` for the example)
 1. `gpg-card> quit`
-1. `gpgkey2ssh EEEEFFFF`
+1. `gpg --export-ssh-key EEEEFFFF`
 1. Copy the public key and add it to the machine you want to SSH into
 1. Attempt to login to the machine via SSH
 
